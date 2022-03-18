@@ -1,6 +1,6 @@
 import NavBar from "../component/common/nav_bar";
 import PortfolioTile from "../component/home_page/portfolio_tile";
-import ProfileFeild from "../component/home_page/profile_feild";
+import ProfileField from "../component/home_page/profile_Field";
 
 export default function HomePage() {
 
@@ -11,7 +11,7 @@ export default function HomePage() {
             </div>
             <div className='flex flex-col'>
                 <div className='flex justify-center m-8'>
-                    <ProfileFeild />
+                    <ProfileField />
                 </div>
                 <div className='absolute top-96 mt-12 md:top-0 md:mt-0 z-0'>
                     <PortfolioTile imagePath='store List.jpg' portfolioName='Store List' />

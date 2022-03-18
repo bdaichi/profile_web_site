@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { useRouter } from "next/router";
 
-export default function ProfileFeild() {
+export default function ProfileField() {
     const router = useRouter()
 
     const routerProfilePage = () => {
