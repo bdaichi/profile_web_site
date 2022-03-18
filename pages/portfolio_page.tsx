@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import Portfolio from "../component/portfolio_page/portfolio";
+import PortfolioField from "../component/portfolio_page/portfolio_field";
 
 export default function PortfolioPage() {
     const router = useRouter()
@@ -16,13 +16,13 @@ export default function PortfolioPage() {
     return (
         <>
             <div>{portfolioName == 'StoreList' &&
-                <Portfolio portfolioName={portfolioName} imagePath='storeList.jpg' summary={storeListSummary} />
+                <PortfolioField portfolioName={portfolioName} imagePath='storeList.jpg' summary={storeListSummary} portfolioURL='https://storelist.vercel.app/shop_list_page' />
             }</div>
             <div>{portfolioName == 'VisitorForecastApp' &&
-                <Portfolio portfolioName={portfolioName} imagePath='visitorForecastApp.jpg' summary={visitorForecastAppSummary} />
+                <PortfolioField portfolioName={portfolioName} imagePath='visitorForecastApp.jpg' summary={visitorForecastAppSummary} portfolioURL='' />
             }</div>
             <div>{portfolioName == 'chatApp' &&
-                <Portfolio portfolioName={portfolioName} imagePath='chatApp.jpg' summary={chatAppSummary} />
+                <PortfolioField portfolioName={portfolioName} imagePath='chatApp.jpg' summary={chatAppSummary} portfolioURL='' />
             }</div>
         </>
     )
