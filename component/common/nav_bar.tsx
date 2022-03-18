@@ -13,7 +13,7 @@ export default function NavBar() {
         <Button
             onClick={routerHomePage}
         >
-            <div className='fixed top-0 flex flex-col z-20 border-b pb-6 p-12 bg-white' style={{ width: '90%', maxWidth: 1200, borderColor: '#01a9f4', }}>
+            <div className='fixed top-0 flex flex-col z-20 border-b pb-6 p-12 bg-white' style={{ width: '90%', maxWidth: 1500, borderColor: '#01a9f4', }}>
                 <CssBaseline />
                 <p className='flex justify-center text-4xl tracking-widest md:my-8' style={{ fontFamily: 'Impact', textShadow: '1px 8px 5px', WebkitTextStroke: '1px white' }}>BEPPU DAICHI</p>
             </div>
