@@ -40,14 +40,18 @@ export default function ProfilePage() {
                 </div>
                 <div className='flex flex-row items-center my-8 mt-12 md:mt-40 ml-6 border-b border-gray-300'>
                     <p className='flex justify-center text-xl md:text-2xl py-4'>趣味</p>
-                    <DrawerIconButton isOpenDrawer={isOpenHobbyDrawer} openDrawer={openHobbyDrawer} closeDrawer={closeHobbyDrawer} />
+                    <div className='absolute right-9'>
+                        <DrawerIconButton isOpenDrawer={isOpenHobbyDrawer} openDrawer={openHobbyDrawer} closeDrawer={closeHobbyDrawer} />
+                    </div>
                 </div>
                 <div>{isOpenHobbyDrawer &&
                     <HobyyField />
                 }</div>
                 <div className='flex flex-row items-center my-8 ml-6 border-b border-gray-300'>
                     <p className='flex justify-center text-lg md:text-2xl py-4'>プログラミングについて</p>
-                    <DrawerIconButton isOpenDrawer={isOpenPGCareerDrawer} openDrawer={openPGCareerDrawer} closeDrawer={closePGCareerDrawer} />
+                    <div className='absolute right-9'>
+                        <DrawerIconButton isOpenDrawer={isOpenPGCareerDrawer} openDrawer={openPGCareerDrawer} closeDrawer={closePGCareerDrawer} />
+                    </div>
                 </div>
                 <div>{isOpenPGCareerDrawer &&
                     <PGCareerField />

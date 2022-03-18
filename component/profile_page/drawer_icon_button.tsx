@@ -13,11 +13,11 @@ export default function DrawerIconButton(props: Props) {
     return (
         <>
             {!props.isOpenDrawer ?
-                <IconButton onClick={props.openDrawer} className='absolute right-9'>
+                <IconButton onClick={props.openDrawer}>
                     <ExpandMoreIcon />
                 </IconButton>
                 :
-                <IconButton onClick={props.closeDrawer} className='absolute right-9'>
+                <IconButton onClick={props.closeDrawer}>
                     <ExpandLessIcon />
                 </IconButton>
             }

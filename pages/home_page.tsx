@@ -1,16 +1,17 @@
 import NavBar from "../component/common/nav_bar";
 import PortfolioTile from "../component/home_page/portfolio_tile";
-import ProfileField from "../component/home_page/profile_Field";
+import ProfileField from "../component/home_page/profile_field";
+
 
 export default function HomePage() {
 
     return (
         <>
-            <div className='flex justify-center'>
+            <div className='flex justify-center z-10'>
                 <NavBar />
             </div>
             <div className='flex flex-col'>
-                <div className='flex justify-center m-8'>
+                <div className='flex justify-center m-8 z-0'>
                     <ProfileField />
                 </div>
                 <div className='absolute top-96 mt-12 md:top-0 md:mt-0 z-0'>
