@@ -7,15 +7,15 @@ export default function HomePage() {
 
     return (
         <>
-            <div className='flex justify-center z-10'>
+            <div className='flex justify-center z-20'>
                 <NavBar />
             </div>
             <div className='flex flex-col'>
-                <div className='flex justify-center m-8 z-0'>
+                <div className='flex justify-center m-8 z-0 md:z-10'>
                     <ProfileField />
                 </div>
                 <div className='absolute top-96 mt-12 md:top-0 md:mt-0 z-0'>
-                    <PortfolioTile imagePath='store List.jpg' portfolioName='Store List' />
+                    <PortfolioTile imagePath='storeList.jpg' portfolioName='StoreList' />
                     <PortfolioTile imagePath='visitorForecastApp.jpg' portfolioName='VisitorForecastApp' />
                     <PortfolioTile imagePath='chatApp.jpg' portfolioName='chatApp' />
                 </div>

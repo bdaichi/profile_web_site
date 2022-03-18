@@ -17,7 +17,7 @@ export default function PortfolioPage() {
 
     return (
         <>
-            <div>{portfolioName == 'Store List' &&
+            <div>{portfolioName == 'StoreList' &&
                 <Portfolio portfolioName={portfolioName} imagePath={imagePath} summary={storeListSummary} />
             }</div>
             <div>{portfolioName == 'VisitorForecastApp' &&
