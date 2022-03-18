@@ -4,6 +4,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import NavBar from "../component/common/nav_bar";
 import { useState } from "react";
+import DetailedProfileField from "../component/profile_page/detailed_profile_field";
 
 export default function ProfilePage() {
     const [isOpenCareerDrawer, setIsOpenCareerDrawer] = useState<boolean>(false)
@@ -35,14 +36,8 @@ export default function ProfilePage() {
                 <img className='opacity-25 mt-20 w-64 md:mt-36 w-72' src='profile.jpg' />
             </div>
             <div className='flex flex-col justify-center z-10 m-8'>
-                <div className='flex flex-col items-center font-semibold absolute top-28 left-16' style={{ fontFamily: '筑紫A丸ゴシック', color: '#007ac1', WebkitTextStroke: '0.4px white' }}>
-                    <img className='flex justify-center items-center rounded-full h-36 w-36 my-8' src='sita_zenra.jpg' />
-                    <p className='flex justify-center text-3xl'>名前： 別府大地</p>
-                    <p className='flex justify-center text-xl m-4 ml-6'>生年月日： 2002年5月20日</p>
-                    <div className='flex flex-row justify-center items-center ml-4'>
-                        <p className='flex justify-center text-xl'>年齢： 19歳</p>
-                        <p className='flex justify-center text-xl mx-4'>血液型： A型</p>
-                    </div>
+                <div className='flex justify-center'>
+                    <DetailedProfileField />
                 </div>
                 <div className='flex flex-row items-center my-8 mt-12 md:mt-40 ml-6 border-b border-gray-300'>
                     <p className='flex justify-center text-xl md:text-2xl py-4'>趣味</p>
