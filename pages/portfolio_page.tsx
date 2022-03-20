@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Header from "../component/common/header";
 
 import PortfolioField from "../component/portfolio_page/portfolio_field";
 
@@ -31,6 +32,7 @@ export default function PortfolioPage() {
 
     return (
         <div style={{ backgroundColor: isDarkMode ? 'black' : 'white' }}>
+            <Header title='ポートフォリオ' />
             <div>{portfolioName == 'StoreList' &&
                 <PortfolioField portfolioName={portfolioName} imagePath='storeList.jpg' summary={storeListSummary} portfolioURL='https://storelist.vercel.app/shop_list_page' isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} isReloadDarkMode={isReloadDarkMode} setIsReloadDarkMode={setIsReloadDarkMode} />
             }</div>

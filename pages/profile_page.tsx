@@ -5,6 +5,7 @@ import DetailedProfileField from "../component/profile_page/detailed_profile_fie
 import DrawerIconButton from "../component/profile_page/drawer_icon_button";
 import HobyyField from "../component/profile_page/hobby_field";
 import PGCareerField from "../component/profile_page/pg_career_field";
+import Header from "../component/common/header";
 
 export default function ProfilePage() {
     const [isReloadDarkMode, setIsReloadDarkMode] = useState(true)
@@ -40,6 +41,7 @@ export default function ProfilePage() {
 
     return (
         <div style={{ backgroundColor: isDarkMode ? 'black' : 'white' }}>
+            <Header title='プロフィール' />
             <div className='flex justify-center z-20' style={{ backgroundColor: isDarkMode ? 'black' : 'white' }}>
                 <NavBar isReloadDarkMode={isReloadDarkMode} setIsReloadDarkMode={setIsReloadDarkMode} isDarkMode={isDarkMode} />
             </div>
