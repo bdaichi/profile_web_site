@@ -33,7 +33,8 @@ export default function HobyyField(props: Props) {
                     <img className='w-24 my-8' src='debu_body.jpg' />
                 </div>
                 <p>↓</p>
-                <img className='w-48 my-8' src='profile.jpg' />
+                <p className='mt-2' style={{ fontFamily: 'Hannotate SC' }}>ぱわーーー！！！</p>
+                <img className='w-48 my-4' src='profile.jpg' />
             </div>
         </>
     )
