@@ -4,6 +4,7 @@ import { useRouter } from "next/router"
 type Props = {
     imagePath: string
     portfolioName: string
+    darkMode: boolean
 }
 
 export default function PortfolioTile(props: Props) {
@@ -17,7 +18,7 @@ export default function PortfolioTile(props: Props) {
     }
 
     return (
-        <div className='my-4 mx-4 md:mt-24 md:mx-20'>
+        <div className='rounded-2xl border-b-4 my-4 mx-4 md:mt-24 md:mx-20' style={{ backgroundColor: props.darkMode ? 'black' : 'white', borderColor: props.darkMode ? '#01a9f4' : 'white' }}>
             <Button
                 onClick={pageRouter}
             >

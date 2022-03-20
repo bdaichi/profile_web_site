@@ -6,6 +6,7 @@ type Props = {
     isOpenDrawer: boolean
     openDrawer: () => void
     closeDrawer: () => void
+    isDarkMode: boolean
 }
 
 export default function DrawerIconButton(props: Props) {
@@ -13,7 +14,7 @@ export default function DrawerIconButton(props: Props) {
     return (
         <>
             {!props.isOpenDrawer ?
-                <IconButton onClick={props.openDrawer}>
+                <IconButton onClick={props.openDrawer} style={{ color: 'white' }}>
                     <ExpandMoreIcon />
                 </IconButton>
                 :

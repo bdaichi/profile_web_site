@@ -1,10 +1,14 @@
-export default function HobyyField() {
+type Props = {
+    isDarkMode: boolean
+}
+
+export default function HobyyField(props: Props) {
 
     return (
         <>
-            <p className='flex justify-center text-xl py-4'>アニメ、漫画、筋トレ</p>
-            <p className='flex justify-center text-lg mt-8 py-4'>アニメ、漫画</p>
-            <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md'>
+            <p className='flex justify-center text-xl py-4' style={{ color: '#01a9f4' }}>アニメ、漫画、筋トレ</p>
+            <p className='flex justify-center text-lg mt-8 py-4' style={{ color: '#01a9f4' }}>アニメ、漫画</p>
+            <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md' style={{ color: 'white', borderColor: '#01a9f4', }}>
                 小さい頃から漫画が大好きで、中学２年生のときアニメオタクに開花しました。
                 手始めにラブライブ！そこからけいおん、CLANNAD、境界の彼方などの京都アニメーション作品にハマりだし
                 今では京都アニメーションをコンプリートしています(京アニ大好き♡)。
@@ -12,8 +16,8 @@ export default function HobyyField() {
                 500冊ほど漫画を持ってます。
                 「ぐらんぶる」という漫画が１番好きです。
             </p>
-            <p className='flex justify-center text-lg mt-8 py-4'>筋トレ</p>
-            <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md'>
+            <p className='flex justify-center text-lg mt-8 py-4' style={{ color: '#01a9f4' }}>筋トレ</p>
+            <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md' style={{ color: 'white', borderColor: '#01a9f4', }}>
                 高校３年の夏からダイエット目的で筋トレをはじめました。
                 好きな筋肉はハムストリングと上腕三頭筋です。
                 ダイエットは成功したのですが、筋トレにハマってしまい今も続けています
