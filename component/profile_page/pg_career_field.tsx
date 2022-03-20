@@ -5,16 +5,16 @@ type Props = {
 export default function PGCareerField(props: Props) {
 
     return (
-        <div className='flex flex-col' >
-            <p className='flex justify-center text-lg py-4' style={{ color: '#01a9f4' }}>プログラミングを始めたきっかけ</p>
-            <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md' style={{ color: 'white', borderColor: '#01a9f4', }}>
+        <div className='flex flex-col' style={{ backgroundColor: props.isDarkMode ? 'black' : 'white' }}>
+            <p className='flex justify-center text-lg py-4' style={{ color: props.isDarkMode ? '#01a9f4' : 'black' }}>プログラミングを始めたきっかけ</p>
+            <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md' style={{ color: props.isDarkMode ? 'white' : 'black', borderColor: props.isDarkMode ? '#01a9f4' : 'black', }}>
                 中学生の時にパソコンができる人に憧れを抱いていて、かっこいいなと思っていました。
                 家の近くの高校の商業科に学力特待生として合格できたのでそこに入学しました。
                 高校でWord、Excelを学びプログラミングにも興味が出てきたのですが、プログラミングの授業はなく
                 教えられる先生もいなかったので、独学でプログラミングの学習をはじめました。
             </p>
-            <p className='flex justify-center text-lg mt-8 py-4' style={{ color: '#01a9f4' }}>プログラミングに対する気持ち</p>
-            <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md' style={{ color: 'white', borderColor: '#01a9f4', }}>
+            <p className='flex justify-center text-lg mt-8 py-4' style={{ color: props.isDarkMode ? '#01a9f4' : 'black' }}>プログラミングに対する気持ち</p>
+            <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md' style={{ color: props.isDarkMode ? 'white' : 'black', borderColor: props.isDarkMode ? '#01a9f4' : 'black', }}>
                 プログラミングを始めたばかりの頃はわからないことだらけで難しいという印象でした。
                 途中で何度も挫折したんですが、どうしてもプログラミングができるようになって、
                 プログラミングを好きになりたい、エンジニアとして将来働きたい、

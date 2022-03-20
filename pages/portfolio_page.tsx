@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Header from "../component/common/header";
 
 import PortfolioField from "../component/portfolio_page/portfolio_field";
 
@@ -23,7 +24,7 @@ export default function PortfolioPage() {
     const query = router.query;
     const portfolioName = query.portfolioName as string;
 
-    const storeListSummary: string = '買い物用のwebアプリです。僕が初めて公開したアプリになります。とても愛着が湧いていて、スーパーへ買い物によく行くので愛用してます。僕はエラーが出て解決するのに時間がかかったら兄に教えてもらっています。このWebアプリは自作アプリ第３号で、エラーが出てもほぼ自分で解決できるようになりました。成長を感じられて嬉しかったです。これは初の人にお見せできるwebアプリです'
+    const storeListSummary: string = '買い物用のwebアプリです。僕が初めて公開したアプリになります。とても愛着が湧いていて、スーパーへ買い物によく行くので愛用してます。僕はエラーが出て解決するのに時間がかかったら兄に教えてもらっています。このWebアプリは自作アプリ第３号で、エラーが出てもほぼ自分で解決できるようになりました。成長を感じられて嬉しかったです。これは初の人にお見せできるwebアプリです。React、TypeScript、Firebaseを使いました。他の２つのアプリも同じです。'
 
     const visitorForecastAppSummary: string = '過去の来客数から、その日の来客数を予測するというwebアプリです。予測方法が単純、その日の予想人数しか出せないなど実用化できるレベルにはないので、公開してません。'
 
@@ -31,6 +32,7 @@ export default function PortfolioPage() {
 
     return (
         <div style={{ backgroundColor: isDarkMode ? 'black' : 'white' }}>
+            <Header title='ポートフォリオ' />
             <div>{portfolioName == 'StoreList' &&
                 <PortfolioField portfolioName={portfolioName} imagePath='storeList.jpg' summary={storeListSummary} portfolioURL='https://storelist.vercel.app/shop_list_page' isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} isReloadDarkMode={isReloadDarkMode} setIsReloadDarkMode={setIsReloadDarkMode} />
             }</div>

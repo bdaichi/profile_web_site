@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Header from "../component/common/header";
 import NavBar from "../component/common/nav_bar";
 import PortfolioTile from "../component/home_page/portfolio_tile";
 import ProfileField from "../component/home_page/profile_field";
@@ -20,6 +21,7 @@ export default function HomePage() {
 
     return (
         <>
+            <Header title='ホームページ' />
             <div className='flex justify-center z-40' style={{ backgroundColor: isDarkMode ? 'black' : 'white' }}>
                 <NavBar isReloadDarkMode={isReloadDarkMode} setIsReloadDarkMode={setIsReloadDarkMode} isDarkMode={isDarkMode} />
             </div>
