@@ -50,7 +50,7 @@ export default function ProfilePage() {
                 <div className='flex justify-center'>
                     <DetailedProfileField />
                 </div>
-                <div className='flex flex-row items-center my-8 mt-12 md:mt-40 ml-6 border-b' style={{ color: '#01a9f4', borderColor: '#01a9f4' }}>
+                <div className='flex flex-row items-center my-8 mt-12 md:mt-40 ml-6 border-b' style={{ color: isDarkMode ? 'white' : 'black', borderColor: isDarkMode ? '#01a9f4' : 'black', }}>
                     <p className='flex justify-center text-xl md:text-2xl py-4'>趣味</p>
                     <div className='absolute right-9'>
                         <DrawerIconButton isOpenDrawer={isOpenHobbyDrawer} openDrawer={openHobbyDrawer} closeDrawer={closeHobbyDrawer} isDarkMode={isDarkMode} />
@@ -59,13 +59,13 @@ export default function ProfilePage() {
                 <div>{isOpenHobbyDrawer &&
                     <HobyyField isDarkMode={isDarkMode} />
                 }</div>
-                <div className='flex flex-row items-center my-8 ml-6 border-b border-gray-300' style={{ color: '#01a9f4', borderColor: '#01a9f4', }}>
+                <div className='flex flex-row items-center my-8 ml-6 border-b border-gray-300' style={{ color: isDarkMode ? 'white' : 'black', borderColor: isDarkMode ? '#01a9f4' : 'black', }}>
                     <p className='flex justify-center text-lg md:text-2xl py-4'>プログラミングについて</p>
                     <div className='absolute right-9'>
                         <DrawerIconButton isOpenDrawer={isOpenPGCareerDrawer} openDrawer={openPGCareerDrawer} closeDrawer={closePGCareerDrawer} isDarkMode={isDarkMode} />
                     </div>
                 </div>
-                <div>{isOpenPGCareerDrawer &&
+                <div className='mb-12'>{isOpenPGCareerDrawer &&
                     <PGCareerField isDarkMode={isDarkMode} />
                 }</div>
             </div>

@@ -14,11 +14,11 @@ export default function DrawerIconButton(props: Props) {
     return (
         <>
             {!props.isOpenDrawer ?
-                <IconButton onClick={props.openDrawer} style={{ color: 'white' }}>
+                <IconButton onClick={props.openDrawer} style={{ color: props.isDarkMode ? 'white' : 'black' }}>
                     <ExpandMoreIcon />
                 </IconButton>
                 :
-                <IconButton onClick={props.closeDrawer}>
+                <IconButton onClick={props.closeDrawer} style={{ color: props.isDarkMode ? 'white' : 'black' }}>
                     <ExpandLessIcon />
                 </IconButton>
             }

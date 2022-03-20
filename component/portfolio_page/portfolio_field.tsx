@@ -30,7 +30,7 @@ export default function PortfolioField(props: Props) {
             <div className='flex justify-center'>
                 <NavBar isReloadDarkMode={props.isReloadDarkMode} setIsReloadDarkMode={props.setIsReloadDarkMode} isDarkMode={props.isDarkMode} />
             </div>
-            <div className='flex flex-col justify-center md:flex-row mt-52 md:mt-72' style={{ backgroundColor: props.isDarkMode ? 'black' : 'white' }}>
+            <div className='flex flex-col justify-center md:flex-row mt-52 md:mt-72' style={{ color: props.isDarkMode ? '#00a9f4' : 'black', backgroundColor: props.isDarkMode ? 'black' : 'white' }}>
                 <div className='flex flex-col mx-4 md:mt-16 md:w-96'>
                     <p className='flex justify-center text-4xl'>{props.portfolioName}</p>
                     <img className='m-8' src={props.imagePath} />
