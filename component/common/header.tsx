@@ -5,7 +5,7 @@ type Props = {
 }
 
 export default function Header(props: Props) {
-    const title = `別府大地の | ${props.title}`
+    const title = `別府大地の${props.title}`
 
     return (
         <Head>
