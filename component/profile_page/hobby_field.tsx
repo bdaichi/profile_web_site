@@ -27,7 +27,7 @@ export default function HobyyField(props: Props) {
                 筋肉は１日にしてならず、継続してトレーニングに励みたいです。
             </p>
             <div className='flex flex-col justify-center items-center my-10' style={{ color: props.isDarkMode ? 'white' : 'black' }} >
-                <p className='text-sm' style={{ fontFamily: 'Hannotate SC' }}>　↓　え？首と顎つながっとるやん</p>
+                <p className='text-sm' style={{ fontFamily: 'Hannotate SC' }}>　↓　首と顎つながっとるやん</p>
                 <div className='flex flex-row'>
                     <img className='w-24 my-8' src='debu_face.jpg' />
                     <img className='w-24 my-8' src='debu_body.jpg' />
