@@ -6,7 +6,7 @@ export default function PGCareerField(props: Props) {
 
     return (
         <div className='flex flex-col items-center' style={{ backgroundColor: props.isDarkMode ? 'black' : 'white' }}>
-            <a className='flex justify-center text-lg my-8 border-b' style={{ color: '#01a9f4', borderColor: '#01a9f4' }} href='https://github.com/bdaichi/profile_web_site.git'>githubアカウント</a>
+            <a className='flex justify-center text-lg my-8 border-b' style={{ color: '#01a9f4', borderColor: '#01a9f4' }} href='https://github.com/bdaichi'>githubアカウント</a>
             <p className='flex justify-center text-lg py-4' style={{ color: props.isDarkMode ? '#01a9f4' : 'black' }}>プログラミングを始めたきっかけ</p>
             <p className='flex justify-center text-base tracking-widest whitespace-pre-wrap mx-4 p-7 border border-gray-400 rounded-md' style={{ color: props.isDarkMode ? 'white' : 'black', borderColor: props.isDarkMode ? '#01a9f4' : 'black', }}>
                 中学生の時にパソコンができる人に憧れを抱いていて、かっこいいなと思っていました。
