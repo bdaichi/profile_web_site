@@ -28,7 +28,7 @@ export default function DetailedProfileField() {
     >
       <img
         className="flex justify-center items-center rounded-full h-36 w-36 my-8"
-        src="kimoi_face.jpg"
+        src="kimoi_face_2.jpeg"
       />
       <p className="flex justify-center text-3xl">名前： 別府大地</p>
       <p className="flex justify-center text-xl m-4 ml-6">
